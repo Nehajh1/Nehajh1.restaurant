@@ -333,6 +333,15 @@ html body{
     display: flex;
     gap: 20px;
   }
+.page3-recipe-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  }
+  /* Adding hover effect to text as well */
+.page3-recipe-card:hover .page3-label,
+.page3-recipe-card:hover h3 {
+  color: black; /* Change text color when hovered */
+}
   .page3-recipe-card{
     background-color: #fff;
     border-radius: 10px;
