@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #2e2e2e;
+}
+
+.page5-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.page5-pricing-label {
+  color: #e67e22;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.page5-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #2e2e2e;
+}
+
+.page5-pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.page5-card {
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
+
+.page5-highlight {
+  background-color: #fff4eb;
+}
+.page5-price-block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.page5-dollar {
+  font-size: 1.2rem;
+  position: relative;
+  top: 10px;
+  font-weight: 600;
+}
+
+.page5-price {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+.page5-best-value {
+  position: absolute;
+  top: 100px;
+  right: -35px;
+  background-color: #facc15;
+  color: #434040;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 4px 40px;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  z-index: 2;
+  box-shadow: 0 0 0 1000px transparent;
+
+}
+
+.page5-plan-title {
+  font-size: 16px;
+  color: #e67e22;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.page5-price {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2e2e2e;
+}
+
+.page5-sub-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.page5-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.page5-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2e2e2e;
+  font-weight: 400;
+}
+
+.page5-icon-svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.page5-btn {
+  display: block;
+  margin: 1rem auto 0 auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #faae2b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+ /* background-color: #faae2b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;*/
+}
+
+.page5-btn:hover {
+  background-color: #e6991a;
+}
+
+.page5-footer-note {
+  font-size: 13px;
+  color: #666;
+  margin-top: 40px;
+  text-align: center;
+}

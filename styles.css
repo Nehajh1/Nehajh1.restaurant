@@ -1,0 +1,964 @@
+/* FIRST CSS FILE */
+/* Import Rubik font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:root{
+  --primary-color: #e67e22;
+  /*--tint-color: #fdf2e9;*/
+  --grey-color: #555;
+  --font-main: "Rubik", sans-serif;
+  --radius: 12px;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+html body{
+    width: 100vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    font-family: "Rubik", sans-serif;
+    /*background-color: var(--tint-color);*/
+    color: var(--grey-color);
+    line-height: 1.6;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+
+/*-------------Page 1 --------------*/
+
+.page1-scale-wrapper {
+  background-color: #fdf2e9;
+}
+.page1-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+.page1-logo{
+    order: 1; /* Now comes first (left side) */
+}
+.page1-logo img{
+    width: 150px;  /* Increased from 60px */
+    height: auto;
+}
+.page1-list{
+    order: 2; /* Now comes second (right side) */ 
+}
+.page1-main-nav-list{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+}
+.page1-main-nav-list a{
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.page1-nav-cta{
+    background-color: var(--primary-color);
+    padding: 8px 16px;
+    color: white !important;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.page1-section-hero{
+    padding: 64px;
+}
+.page1-hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+}
+.page1-hero-text-box{
+    max-width: 50%;
+    margin-left: auto;  /* Centers it horizontally */
+    margin-right: auto; /* Centers it horizontally */
+    padding-left: 200px;  /* Adds a little space to move the text slightly right */
+  }
+  .page1-heading-primary{
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #333333;
+    line-height: 1.4;
+  }
+  .page1-hero-description{
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: #333333;
+  }
+  .page1-hero-buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    padding: 40px 0;
+    justify-content: center;
+    margin-right: 65px;
+  }
+  .page1-btn{
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .page1-btn--full{
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+  }
+  .page1-btn--outline{
+    border: 2px solid #ddd;
+    color: var(--grey-color);
+    background-color: white;
+    font-weight: bold;
+  }
+  .page1-hero-buttons :hover{
+    color: rgb(40, 37, 37);
+  }
+  .page1-delivered-meals{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .page1-delivered-imgs img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -10px;
+  }
+  .page1-delivered-text{
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+  }
+  .page1-delivered-text strong{
+    color: var(--primary-color);
+  }
+  .page1-hero-img-box{
+    position: relative;
+    width: 520px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: 40px;
+  }
+  .page1-img-meal2{
+    width: 400px;
+    height: 450px;
+    top: 0px;     /* lowered it slightly */
+    right: 10px;    /* moved a bit to the right */
+    border-radius: 0;
+  }
+
+  /*-------------Page 2 --------------*/
+
+  .page2-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  .page2-featured-in{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Rubik, sans-serif;
+  }
+  .page2-featured-text{
+    font-size: 14px;
+    color: #857f7f;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .page2-logos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #857f7f;
+  }
+  .page2-logo1{
+    height: 30px;
+    filter: brightness(0) saturate(100%) hue-rotate(180deg);
+    opacity: 0.6;
+  }
+  .page2-logo2{
+    height: 30px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+  }
+  .page2-logo3{
+    height: 30px;
+    filter: grayscale(100%);
+    color: lightslategray;
+    opacity: 0.5;
+  }
+  .page2-logo4{
+    height: 30px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+  }
+  .page2-logo5{
+    height: 30px;
+    filter: grayscale(100%);
+    opacity: 0.6;
+  }
+  .page2-section-label{
+    font-size: 14px;
+    font-weight: 700;
+    color: #f28c38; /* Orange color */
+    text-transform: uppercase;
+    margin-right: 10px; /* Add spacing between "HOW IT WORKS" and the main heading */
+    margin-top: 60px;
+  }
+  .page2-how-it-works h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+    max-width: 80%;
+    text-align: left;
+    margin-bottom: 60px;
+    display: flex; /* Use flex to align the label and heading in a single line */
+    align-items: baseline; /* Align the baseline of the text for better visual alignment */
+  }
+  .page2-step-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: nowrap;
+  }
+  .page2-step-text{
+    max-width: 50%;
+    text-align: left; 
+    margin: 0;
+  }
+  .page2-step-number{
+    font-size: 80px;
+    font-weight: 700;
+    color: #e8dfdf;
+    display: block;
+    margin-bottom: 20px;
+    gap: 100px;
+    margin: 0;
+  }
+  .page2-step-text h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .page2-step-text p{
+    font-size: 19px;
+    color: #333333;
+    line-height: 1.8;
+  }
+  .page2-step-image{
+    max-width: 40%;
+    position: relative;
+    overflow: visible;
+  }
+  .page2-step-image::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px; /* Slightly smaller for the ring effect */
+    height: 200px;
+   
+    background-color: #f7d0b2;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .page2-step-image::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px; /* Size of the background circle */
+    height: 300px;
+    background-color: #f5e1d2; /* Peach color for the main circle */
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .page2-step-image img{
+    position: relative;
+    max-width: 50%;
+    height: auto;
+    left: 100px;
+    border-radius: 10px;
+    z-index: 4;
+  }
+
+  /*-------------Page 3 --------------*/
+  .page3-container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .page3-header{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .page3-header h1{
+    font-size: 36px;
+    color: #333;
+  }
+  .page3-header p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f28c38;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .page3-main-content{
+    display: flex;
+    gap: 20px;
+    
+  }
+  .page3-recipes{
+    flex: 2;
+    display: flex;
+    gap: 20px;
+  }
+  .page3-recipe-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  }
+  /* Adding hover effect to text as well */
+.page3-recipe-card:hover .page3-label,
+.page3-recipe-card:hover h3 {
+  color: black; /* Change text color when hovered */
+}
+.page3-sidebar:hover{
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+  .page3-recipe-card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 50%;
+    
+  }
+  .page3-recipe-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .page3-recipe-card .page3-content{
+    padding: 20px;
+  }
+  .page3-recipe-card .page3-label{
+    display: inline-block;
+    background-color: #28a745;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .page3-recipe-card .page3-label-paleo{
+    display: inline-block;
+    background-color: rgb(225, 225, 68);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .page3-content{
+    color: #333333;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .page3-heading h3{
+    top: 12px;
+    gap: 100px;
+  }
+
+  .page3-recipe-card .page3-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    color: #6e6c6c;
+    gap: 15px;
+  }
+  .page3-recipe-card .page3-info span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .page3-recipe-card .page3-info img{
+    width: 16px;
+    height: 16px;
+  }
+  .page3-sidebar{
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 500px;
+  }
+  .page3-sidebar h3{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .page3-sidebar ul{
+    list-style: none;
+  }
+  .page3-sidebar ul li{
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .page3-footer{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .page3-footer a{
+    color: #f28c38;
+    font-size: 14px;
+    display: inline-block; /* ensures margin/padding applies properly */
+    margin-top: 10px; /* adjust the value to control spacing */
+  }
+
+
+  /*----------------------- page 4 ---------------------*/
+
+  .page4-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 80px;
+    background-color: #fdf2e9;
+  }
+  
+  /* Left Section (Testimonials) */
+  .page4-left-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    padding-right: 50px;
+  }
+  .page4-p p{
+    color: #d26c1e;
+  }
+
+  .page4-p h1{
+    font-size: 32px;
+  }
+  
+  .page4-estimonials-label {
+    color: #d26c1e;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .page4-main-heading {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: #1c1c1c;
+  }
+  
+  .page4-testimonial {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column; 
+  }
+  .page4-testimonals-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 50px;
+  }
+  
+  .page4-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  .page4-quote {
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .page4-author {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  /* Right Section (Gallery) */
+  .page4-right-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    border-radius: 0;
+  }
+  
+  .page4-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+  }
+  
+  .page4-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  /*------------- page 5 --------------------*/
+
+  .page5-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: white;
+  }
+  .content5{
+    background-color: white;
+  }
+  .page5-pricing-label {
+    color: #e67e22;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .page5-heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #2e2e2e;
+  }
+  .page5-pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .page5-card {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+  }
+  .page5-highlight {
+    background-color: #fff4eb;
+  }
+  .page5-price-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    margin-bottom: 0.5rem;
+  }
+  .page5-dollar {
+    font-size: 1.2rem;
+    position: relative;
+    top: 10px;
+    font-weight: 600;
+  }
+  .page5-price {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .page5-best-value {
+    position: absolute;
+    top: 100px;
+    right: -35px;
+    background-color: #facc15;
+    color: #434040;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 4px 40px;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    z-index: 2;
+    box-shadow: 0 0 0 1000px transparent;
+  
+  } 
+  .page5-plan-title {
+    font-size: 16px;
+    color: #e67e22;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .page5-price {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2e2e2e;
+  }
+  
+  .page5-sub-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .page5-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    line-height: 2;
+    font-size: 14px;
+  }
+  
+  .page5-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2e2e2e;
+    font-weight: 400;
+  }
+  
+  .page5-icon-svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  
+  .page5-btn {
+    display: block;
+    margin: 1rem auto 0 auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #faae2b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+   /* background-color: #faae2b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;*/
+  }
+  
+  .page5-btn:hover {
+    background-color: #e6991a;
+  }
+  
+  .page5-footer-note {
+    font-size: 13px;
+    color: #252323;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+
+
+  /*--------------Responsive page ------------------*/
+
+  /* Mobile-first approach */
+@media screen and (max-width: 767px) {
+  /* Page 1 */
+  .page1-scale-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-attachment: #fdf2e9;
+    padding: 30px 15px;
+  }
+  .page1-header {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 1rem;
+
+  }
+  .page1-logo img {
+    width: 80px; /* Reduced logo size */
+  }
+  .page1-hero-img-box{
+    width: 10px;
+    right: 9rem;
+  }
+  .page1-main-nav-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .page1-hero {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .page1-hero-img-box {
+    width: 100%;
+    margin: 0;
+  }
+  .page1-hero-text-box {
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .page1-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* Page 2 */
+  .page2-container {
+    padding: 20px;
+    background-color: white;
+  }
+  .page2-logos {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .page2-step-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .page2-section-label, .page2-heading{
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .page2-step-text{
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .page2-step-text h3{
+    text-align: start;
+    font-size: xx-large;
+    text-align: center;
+  }
+  .page2-step-text p{
+    text-align: start;
+    font-size: 20px;
+    flex-direction: column;
+
+  }
+  .page2-step-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    right:1rem;
+  }
+  .page2-step-image::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Slightly smaller for the ring effect */
+    height: 200px;
+    background-color: #f7d0b2;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .page2-step-image::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    width: 250px; /* Size of the background circle */
+    height: 250px;
+    background-color: #f5e1d2; /* Peach color for the main circle */
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* Page 3 */
+  .page3-main-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .page3-recipes {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .page3-recipe-card {
+    width: 100%;
+  }
+
+  /* Page 4 */
+  .page4-container {
+    background-color: #fdf2e9;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .page4-left-section,
+  .page4-right-section {
+    max-width: 100%;
+    padding: 0;
+  }
+  .page4-testimonials-grid {
+    grid-template-columns: 1fr; /* Stacks testimonials vertically */
+  }
+  .page4-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Page 5 */
+  .page5-pricing-cards {
+    flex-direction: column;
+  }
+  .page5-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Page 1 */
+  .page1-scale-wrapper{
+    background-color: #fdf2e9;
+  }
+  .page1-header {
+    padding: 20px 40px;
+  }
+  .page1-main-nav-list {
+    gap: 20px;
+  }
+  .page1-hero {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .page1-hero-img-box {
+    width: 50%;
+  }
+
+  /* Page 2 */
+  .page2-container {
+    padding: 40px 30px;
+  }
+
+  /* Page 3 */
+  .page3-main-content {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  /* Page 4 */
+  .page4-testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .page4-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Page 5 */
+  .page5-pricing-cards {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .page5-card {
+    width: 45%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  /* Page 1 */
+  .page1-scale-wrapper{
+    background-color: #fdf2e9;
+  }
+  .page1-header {
+    padding: 30px 60px;
+  }
+  .page1-main-nav-list {
+    gap: 40px;
+  }
+  .page1-hero {
+    gap: 80px;
+  }
+
+  /* Page 2 */
+  .page2-container {
+    padding: 80px 60px;
+  }
+  .page2-step-content {
+    gap: 40px;
+  }
+
+  /* Page 3 */
+  .page3-main-content {
+    gap: 40px;
+  }
+  .page3-recipe-card {
+    width: 48%;
+  }
+
+  /* Page 4 */
+  .page4-testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Page 5 */
+  .page5-pricing-cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .page5-card {
+    width: 30%;
+    margin-bottom: 40px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .page1-hero-text-box, .page4-grid {
+    flex-direction: column; /* Stacks content vertically on smaller screens */
+    align-items: center; /* Centers the content */
+  }
+
+  .page1-hero-img-box, .page4-content img {
+    max-width: 90%; /* Ensures images are not too wide */
+    margin-bottom: 20px; /* Adds space between image and text */
+  }
+
+  .page1-content p, .page4-content p {
+    max-width: 90%; /* Ensures text doesn't overflow */
+    margin-left: 0; /* Removes extra margin on smaller screens */
+  }
+}
