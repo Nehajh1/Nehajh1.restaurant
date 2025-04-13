@@ -48,6 +48,65 @@ html body{
 .page1-list{
     order: 2; /* Now comes second (right side) */ 
 }
+
+/* Hamburger Menu Styles */
+.nav-toggle {
+  display: none; /* Hidden checkbox */
+}
+
+.nav-toggle-label {
+  display: none; /* Hidden by default, shown on smaller screens */
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 20; /* Ensure it’s above other elements */
+}
+
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+  background-color: #333;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.hamburger-icon {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+}
+
+.hamburger-icon::before {
+  top: -8px;
+}
+
+.hamburger-icon::after {
+  top: 8px;
+}
+
+/* Transform hamburger into "X" when checked */
+.nav-toggle:checked + .nav-toggle-label .hamburger-icon {
+  background: transparent;
+}
+
+.nav-toggle:checked + .nav-toggle-label .hamburger-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-toggle:checked + .nav-toggle-label .hamburger-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+
 .page1-main-nav-list{
     display: flex;
     gap: 32px;
@@ -325,7 +384,7 @@ html body{
   }
   .page3-main-content{
     display: flex;
-    gap: 20px;
+    gap: 15px;
     
   }
   .page3-recipes{
@@ -683,6 +742,10 @@ html body{
   .page5-btn:hover {
     background-color: #e6991a;
   }
+  .page5-pricing-cards :hover{
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  }
   
   .page5-footer-note {
     font-size: 13px;
@@ -690,14 +753,231 @@ html body{
     margin-top: 40px;
     text-align: center;
   }
+
+  /*--------------Page 6 ------------------*/
+  .page6-features {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    text-align: center;
+    gap: 80px;
+  }
   
+  .page6-feature {
+    max-width: 200px;
+    color: #333333;
+    font-size: 30px;
+  }
+  .page6-feature .page6-icon {
+    font-size: 30px;
+    background-color: #ffe3c4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 4px;
+    align-items: flex-start;
+  }
+  
+  .page6-feature h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .page6-feature p {
+    line-height: 1.5;
+    font-size: 18px;
+    color: #333333;
+    width: 260px;
+  }
+  
+  .page6-signup-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .page6-signup-box {
+    display: flex;
+    background: linear-gradient(to right, #ec8c3a, #e87e1c);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .page6-form-content {
+    padding: 2rem;
+    flex: 1;
+    color: #fff;
+  }
+  
+  .page6-form-content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #333333;
+  }
+  
+  .page6-form-content p {
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+    color: #333333;
+  }
+  
+  .page6-form-content form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .page6-form-group {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+  }
+  .page6-submit-button {
+    background-color: black;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+  .page6-submit-button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .page6-full-width {
+    flex: 1 1 45%;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .page6-form-group input,
+  .page6-form-group select {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 0.3rem;
+  }
+  .page6-form-group label{
+    color: #333333;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .page6-form-content button {
+    background-color: #2e1400;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  .page6-full-width:hover{
+    
+    color: black;
+  }
+  
+  .page6-form-image {
+    flex: 1;
+  }
+  
+  .page6-form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /*----------------page 7 --------------------*/
+  #page7 {
+    background-color: transparent;
+    padding: 60px 40px;
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    gap: 40px;
+  }
+  
+  #page7Logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  #page7SocialIcons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  #page7SocialIcons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  #page7SocialIcons img:hover {
+    transform: scale(1.1);
+  }
+  
+  #page7Copyright {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #777;
+  }
+  
+  #page7 h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  #page7 p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #444;
+    cursor: pointer;
+  }
+  
+  #page7 p:hover {
+    text-decoration: underline;
+  }
+  
+  
+
 
 
   /*--------------Responsive page ------------------*/
 
   /* Mobile-first approach */
-@media screen and (max-width: 767px) {
-  /* Page 1 */
+@media screen and (max-width: 768px) {
+  /* Page 1 */.nav-toggle:checked ~ .page1-main-nav .page1-main-nav-list {
+    display: flex !important; /* Show menu when checked */
+  }
+
+
   .page1-scale-wrapper{
     width: 100%;
     margin: 0 auto;
@@ -822,20 +1102,21 @@ html body{
 
   /* Page 4 */
   .page4-container {
-    background-color: #fdf2e9;
-    flex-direction: column;
-    padding: 40px 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+
   .page4-left-section,
   .page4-right-section {
-    max-width: 100%;
-    padding: 0;
+    flex: 1 1 100%;
   }
-  .page4-testimonials-grid {
-    grid-template-columns: 1fr; /* Stacks testimonials vertically */
+
+  .page4-testimonals-grid {
+    grid-template-columns: repeat(2, 1fr); /* keep 2 columns */
   }
+
   .page4-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr); /* maintain grid layout */
   }
 
   /* Page 5 */
@@ -846,119 +1127,453 @@ html body{
     width: 100%;
     margin-bottom: 20px;
   }
-}
 
-/* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Page 1 */
-  .page1-scale-wrapper{
-    background-color: #fdf2e9;
+  /* page 6 */
+  .page6-features {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    text-align: center;
+    gap: 30px;
   }
-  .page1-header {
-    padding: 20px 40px;
+  
+  .page6-feature {
+    max-width: 200px;
   }
-  .page1-main-nav-list {
-    gap: 20px;
+  
+  .page6-feature .page6-icon {
+    font-size: 30px;
+    background-color: #ffe3c4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 4px;
+    align-items: flex-start;
   }
-  .page1-hero {
+  
+  .page6-feature h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .page6-feature p {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .page6-signup-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .page6-signup-box {
+    display: flex;
+    background: linear-gradient(to right, #ec8c3a, #e87e1c);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .page6-form-content {
+    padding: 2rem;
+    flex: 1;
+    color: #fff;
+  }
+  
+  .page6-form-content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .page6-form-content p {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: #441f06;
+  }
+  
+  .page6-form-content form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .page6-form-group {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page6-submit-button {
+    background-color: #2e1400;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .page6-full-width {
+    flex: 1 1 45%;
+    flex-direction: column;
+    display: flex;
+  } 
+  .page6-form-group input,
+  .page6-form-group select {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 0.3rem;
+  }
+  
+  .page6-form-content button {
+    background-color: #2e1400;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .page6-form-image {
+    flex: 1;
+  }
+  
+  .page6-form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+   /* page 7 */
+  /* Page 7 Flex Setup */
+  #page7 {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 40px;
-  }
-  .page1-hero-img-box {
-    width: 50%;
-  }
-
-  /* Page 2 */
-  .page2-container {
-    padding: 40px 30px;
-  }
-
-  /* Page 3 */
-  .page3-main-content {
-    flex-direction: row;
+    padding: 40px 20px;
     gap: 30px;
   }
 
-  /* Page 4 */
-  .page4-testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .page4-grid {
-    grid-template-columns: repeat(2, 1fr);
+  /* Row 1: Account, Company, Resources (side-by-side) */
+  #page7 > div:nth-child(3),  /* Account */
+  #page7 > div:nth-child(4),  /* Company */
+  #page7 > div:nth-child(5)   /* Resources */
+  {
+    order: 1;
+    flex: 1 1 30%;  /* About 1/3 of the row each */
+    min-width: 100px;
   }
 
-  /* Page 5 */
-  .page5-pricing-cards {
-    flex-direction: row;
-    justify-content: flex-start;
+  /* Row 2: Omnifood (left), Contact Us (right) */
+  #page7 > div:nth-child(1)  /* Omnifood */
+  {
+    order: 2;
+    flex: 1 1 45%;
+    min-width: 200px;
   }
-  .page5-card {
-    width: 45%;
+
+  #page7 > div:nth-child(2)  /* Contact Us */
+  {
+    order: 3;
+    flex: 1 1 45%;
+    min-width: 200px;
+  }
+
+  /* Font size for smaller screens */
+  #page7 h4,
+  #page7 p {
+    font-size: 14px;
+  }
+
+  /* Align copyright text */
+  #page7Copyright {
+    text-align: left;
   }
 }
+ 
+  
+  /*--------------Responsive page ------------------*/
 
-/* Desktop */
-@media screen and (min-width: 1025px) {
+  /* Mobile-first approach */
+@media screen and (max-width: 768px) {
   /* Page 1 */
   .page1-scale-wrapper{
-    background-color: #fdf2e9;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-attachment: #fdf2e9;
+    padding: 30px 15px;
   }
   .page1-header {
-    padding: 30px 60px;
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 1rem;
+
+  }
+  .page1-logo img {
+    width: 80px; /* Reduced logo size */
+  }
+  .page1-hero-img-box{
+    width: 10px;
+    right: 9rem;
   }
   .page1-main-nav-list {
-    gap: 40px;
+    flex-direction: column;
+    gap: 16px;
   }
   .page1-hero {
-    gap: 80px;
+    flex-direction: column;
+    gap: 30px;
   }
+  .page1-hero-img-box {
+    width: 100%;
+    margin: 0;
+  }
+  .page1-hero-text-box {
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .page1-btn {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    height: 120px;
+    
+  }
+.page1-btn--full, .page1-btn--outline a{
+  font-size: 20px;
+}
 
   /* Page 2 */
   .page2-container {
-    padding: 80px 60px;
+    padding: 0 15px;
   }
+
+  .page2-heading {
+    font-size: 28px;
+  }
+  .page2-logos{
+    font-size: 8px;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .page2-logos img {
+    height: 10px; /* Slightly smaller logos for tablets */
+  }
+
   .page2-step-content {
-    gap: 40px;
+    flex-direction: column;
+    gap: 20px;
   }
+
+  .page2-step-text {
+    text-align: center;
+  }
+
+  .page2-step-number {
+    font-size: 48px;
+  }
+
+  .page2-step-text h3 {
+    font-size: 20px;
+  }
+
+  .page2-step-text, .page2-how-it-works p {
+    font-size: 14px;
+  }
+
+  .page2-logos {
+    gap: 30px; /* Adjusted gap for smaller screens */
+    flex-wrap: wrap;
+  }
+
+  .page2-logos img {
+    height: 20px; /* Slightly smaller logos for tablets */
+  }
+
+  .page2-featured-text {
+    font-size: 12px;
+  }
+  .page2-step-image img {
+    max-width: 250px; /* Reduced phone size for tablets */
+  }
+
 
   /* Page 3 */
   .page3-main-content {
-    gap: 40px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .page3-recipes {
+    flex-direction: column;
+    gap: 20px;
   }
   .page3-recipe-card {
-    width: 48%;
+    width: 100%;
   }
 
   /* Page 4 */
-  .page4-testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .page4-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* Page 5 */
   .page5-pricing-cards {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
   }
   .page5-card {
-    width: 30%;
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* page 6 */
+  /* Stack features vertically on mobile */
+  .page6-features {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .page6-feature {
+    max-width: 100%;
+  }
+
+  /* Stack signup box (image on top, form below) */
+  .page6-signup-box {
+    flex-direction: column-reverse;
+    background: none; /* Remove gradient from the container */
+    display: flex;
+  }
+
+  .page6-form-content {
+    background: linear-gradient(to right, #ec8c3a, #e87e1c); /* White box */
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333; /* Dark text */
+  }
+
+  .page6-form-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .page6-form-image img {
+    border-radius: 12px 12px 0 0; /* Round top corners of the image */
+    height: 200px; /* Fixed height for mobile to match screenshot proportions */
+  }
+
+  /* Adjust form fields for mobile */
+  .page6-form-group {
+    flex: 1 1 45%; /* Preserve the side-by-side layout for form fields */
+  }
+
+  .page6-full-width {
+    flex: 1 1 100%; /* Full-width fields like the dropdown and button remain full-width */
+  }
+
+  /* Adjust padding and spacing for mobile */
+  .page6-signup-section {
+    margin-bottom: 30px;
   }
 }
 
-/* Mobile view */
-@media (max-width: 768px) {
-  .page1-hero-text-box, .page4-grid {
-    flex-direction: column; /* Stacks content vertically on smaller screens */
-    align-items: center; /* Centers the content */
+
+@media (max-width: 480px) {
+  .nav-toggle-label {
+    width: 25px;
+    height: 18px;
+  }
+  .hamburger-icon::before {
+    top: -6px;
   }
 
-  .page1-hero-img-box, .page4-content img {
-    max-width: 90%; /* Ensures images are not too wide */
-    margin-bottom: 20px; /* Adds space between image and text */
+  .hamburger-icon::after {
+    top: 6px;
   }
 
-  .page1-content p, .page4-content p {
-    max-width: 90%; /* Ensures text doesn't overflow */
-    margin-left: 0; /* Removes extra margin on smaller screens */
+  #page2 {
+    padding: 20px 0;
+  }
+  .page2-heading {
+    font-size: 24px;
+  }
+  .page2-step-number {
+    font-size: 36px;
+  }
+  .page2-step-text h3 {
+    font-size: 18px;
+  }
+  .page2-step-text p {
+    font-size: 13px;
+  }
+  .page2-logos {
+    gap: 10px; /* Further reduced gap for mobile */
+    flex-wrap: wrap; /* Ensures logos wrap if needed */
+  }
+  .page2-logos img {
+    height: 10px; /* Smaller logos for mobile */
+  font-size: 20px; 
+ }
+  .page2-featured-text {
+    font-size: 12px;
+  }
+  .page2-section-label {
+    font-size: 12px;
+  }
+  .page2-step-image img {
+    max-width: 180px; /* Further reduced phone size for mobile */
+  }
+
+
+  .page4-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 1200px) {
+  .page4-container {
+    flex-wrap: wrap;
+  }
+  .page4-left-section,
+  .page4-right-section {
+    flex: 1 1 100%;
+  }
+  .page4-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+}
+
+@media (max-width: 992px) {
+  .page4-testimonals-grid{
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+
