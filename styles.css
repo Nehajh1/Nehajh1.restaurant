@@ -181,7 +181,9 @@ html body{
     font-weight: bold;
   }
   .page1-hero-buttons :hover{
-    color: rgb(40, 37, 37);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(230, 126, 34, 0.4);
+    
   }
   .page1-delivered-meals{
     display: flex;
@@ -314,12 +316,12 @@ html body{
   .page2-step-text h3{
     font-size: 24px;
     font-weight: 700;
-    color: #333;
+    color: #555;
     margin-bottom: 20px;
   }
   .page2-step-text p{
     font-size: 19px;
-    color: #333333;
+    color: #555;
     line-height: 1.8;
   }
   .page2-step-image{
@@ -393,8 +395,8 @@ html body{
     gap: 20px;
   }
   .page3-recipe-card:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transform: scale(1); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1); /* Stronger shadow */
   }
   /* Adding hover effect to text as well */
 .page3-recipe-card:hover .page3-label,
@@ -402,8 +404,8 @@ html body{
   color: black; /* Change text color when hovered */
 }
 .page3-sidebar:hover{
-  transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  transform: scale(1); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1); /* Stronger shadow */
 }
   .page3-recipe-card{
     background-color: #fff;
@@ -493,6 +495,18 @@ html body{
     align-items: center;
     gap: 15px;
   }
+  .page3-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2e2e2e;
+    font-weight: 400;
+  }  
+  .page3-icon-svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }  
   .page3-footer{
     text-align: center;
     margin-top: 20px;
@@ -504,7 +518,6 @@ html body{
     margin-top: 10px; /* adjust the value to control spacing */
   }
 
-
   /*----------------------- page 4 ---------------------*/
 
   .page4-container {
@@ -512,8 +525,7 @@ html body{
     flex-wrap: wrap;
     padding: 60px 80px;
     background-color: #fdf2e9;
-  }
-  
+  }  
   /* Left Section (Testimonials) */
   .page4-left-section {
     flex: 1;
@@ -524,11 +536,9 @@ html body{
   .page4-p p{
     color: #d26c1e;
   }
-
   .page4-p h1{
     font-size: 32px;
-  }
-  
+  }  
   .page4-estimonials-label {
     color: #d26c1e;
     font-weight: bold;
@@ -536,15 +546,13 @@ html body{
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-  
+  }  
   .page4-main-heading {
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 50px;
     color: #1c1c1c;
-  }
-  
+  }  
   .page4-testimonial {
     margin-bottom: 40px;
     display: flex;
@@ -554,41 +562,35 @@ html body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 50px;
-  }
-  
+  }  
   .page4-avatar {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-bottom: 15px;
     object-fit: cover;
-  }
-  
+  }  
   .page4-quote {
     font-size: 18px;
     color: #444;
-  }
-  
+  } 
   .page4-author {
     font-size: 15px;
     margin-top: 10px;
     color: #777;
-  }
-  
+  } 
   /* Right Section (Gallery) */
   .page4-right-section {
     flex: 1;
     min-width: 300px;
     max-width: 50%;
     border-radius: 0;
-  }
-  
+  }  
   .page4-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px; 
-  }
-  
+  }  
   .page4-grid img {
     width: 100%;
     height: 180px;
@@ -672,8 +674,7 @@ html body{
     transform: rotate(45deg);
     transform-origin: top right;
     z-index: 2;
-    box-shadow: 0 0 0 1000px transparent;
-  
+    box-shadow: 0 0 0 1000px transparent;  
   } 
   .page5-plan-title {
     font-size: 16px;
@@ -681,43 +682,37 @@ html body{
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
-  }
-  
+  }  
   .page5-price {
     font-size: 40px;
     font-weight: 700;
     color: #2e2e2e;
-  }
-  
+  }  
   .page5-sub-text {
     font-size: 14px;
     color: #666;
     margin-top: 5px;
     margin-bottom: 20px;
-  }
-  
+  }  
   .page5-features {
     list-style: none;
     padding: 0;
     margin: 0 0 20px 0;
     line-height: 2;
     font-size: 14px;
-  }
-  
+  }  
   .page5-feature-item {
     display: flex;
     align-items: center;
     gap: 10px;
     color: #2e2e2e;
     font-weight: 400;
-  }
-  
+  }  
   .page5-icon-svg {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-  }
-  
+  }  
   .page5-btn {
     display: block;
     margin: 1rem auto 0 auto;
@@ -737,16 +732,17 @@ html body{
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;*/
+  }  
+  .page5-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-color: #e67e22;
   }
-  
   .page5-btn:hover {
-    background-color: #e6991a;
+    background-color: #cf711f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(230, 126, 34, 0.4);
   }
-  .page5-pricing-cards :hover{
-    transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
-  }
-  
   .page5-footer-note {
     font-size: 13px;
     color: #252323;
@@ -761,8 +757,7 @@ html body{
     margin-bottom: 200px;
     text-align: center;
     gap: 80px;
-  }
-  
+  }  
   .page6-feature {
     max-width: 200px;
     color: #333333;
@@ -782,27 +777,28 @@ html body{
     margin-top: 4px;
     align-items: flex-start;
   }
-  
+  .page6-icon img {
+    height: 50px;
+    width: 20px;
+    object-fit: contain;
+  }  
   .page6-feature h3 {
     font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-  }
-  
+  }  
   .page6-feature p {
     line-height: 1.5;
     font-size: 18px;
     color: #333333;
     width: 260px;
-  }
-  
+  }  
   .page6-signup-section {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 50px;
-  }
-  
+  }  
   .page6-signup-box {
     display: flex;
     background: linear-gradient(to right, #ec8c3a, #e87e1c);
@@ -812,33 +808,28 @@ html body{
     max-width: 1000px;
     width: 100%;
     padding: 0;
-  }
-  
+  }  
   .page6-form-content {
     padding: 2rem;
     flex: 1;
     color: #fff;
-  }
-  
+  }  
   .page6-form-content h2 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
     color: #333333;
-  }
-  
+  }  
   .page6-form-content p {
     margin-bottom: 1.5rem;
     font-size: 0.8rem;
     color: #333333;
-  }
-  
+  }  
   .page6-form-content form {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-  }
-  
+  }  
   .page6-form-group {
     flex: 1 1 45%;
     display: flex;
@@ -859,14 +850,12 @@ html body{
     background-color: white;
     color: black;
     border: 1px solid black;
-  }
-  
+  }  
   .page6-full-width {
     flex: 1 1 45%;
     flex-direction: column;
     display: flex;
-  }
-  
+  }  
   .page6-form-group input,
   .page6-form-group select {
     padding: 0.6rem;
@@ -878,8 +867,7 @@ html body{
     color: #333333;
     font-weight: bold;
     font-size: 12px;
-  }
-  
+  } 
   .page6-form-content button {
     background-color: #2e1400;
     color: #fff;
@@ -891,14 +879,11 @@ html body{
     margin-top: 0.5rem;
   }
   .page6-full-width:hover{
-    
     color: black;
-  }
-  
+  }  
   .page6-form-image {
     flex: 1;
-  }
-  
+  }  
   .page6-form-image img {
     width: 100%;
     height: 100%;
@@ -919,65 +904,52 @@ html body{
     max-width: 1400px;
     margin: auto;
     gap: 40px;
-  }
-  
+  }  
   #page7Logo {
     width: 120px;
     margin-bottom: 20px;
-  }
-  
+  }  
   #page7SocialIcons {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-  }
-  
+  }  
   #page7SocialIcons img {
     width: 20px;
     height: 20px;
     cursor: pointer;
     transition: transform 0.2s;
-  }
-  
+  }  
   #page7SocialIcons img:hover {
     transform: scale(1.1);
-  }
-  
+  }  
   #page7Copyright {
     margin-top: 20px;
     font-size: 13px;
     color: #777;
-  }
-  
+  } 
   #page7 h4 {
     font-weight: 600;
     margin-bottom: 15px;
-  }
-  
+  }  
   #page7 p {
     margin: 5px 0;
     font-size: 15px;
     color: #444;
     cursor: pointer;
   }
-  
   #page7 p:hover {
     text-decoration: underline;
   }
   
-  
-
-
-
   /*--------------Responsive page ------------------*/
 
   /* Mobile-first approach */
 @media screen and (max-width: 768px) {
-  /* Page 1 */.nav-toggle:checked ~ .page1-main-nav .page1-main-nav-list {
+  /* Page 1 */
+  .nav-toggle:checked ~ .page1-main-nav .page1-main-nav-list {
     display: flex !important; /* Show menu when checked */
   }
-
-
   .page1-scale-wrapper{
     width: 100%;
     margin: 0 auto;
@@ -993,14 +965,13 @@ html body{
     flex-direction: column;
     padding: 10px 10px;
     font-size: 1rem;
-
   }
   .page1-logo img {
     width: 80px; /* Reduced logo size */
   }
   .page1-hero-img-box{
-    width: 10px;
-    right: 9rem;
+    width: 20px;
+    left: auto;
   }
   .page1-main-nav-list {
     flex-direction: column;
@@ -1010,18 +981,17 @@ html body{
     flex-direction: column;
     gap: 30px;
   }
-  .page1-hero-img-box {
+  .page1-hero-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
     width: 100%;
-    margin: 0;
-  }
-  .page1-hero-text-box {
-    padding-left: 0;
-    max-width: 100%;
   }
   .page1-btn {
-    width: 100%;
-    text-align: center;
-    padding: 12px;
+    white-space: nowrap;
+    height: 40px;
   }
 
   /* Page 2 */
@@ -1057,36 +1027,22 @@ html body{
 
   }
   .page2-step-image {
-    width: 100%;
     max-width: 100%;
-    margin: 0;
-    right:1rem;
-  }
-  .page2-step-image::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 57%;
-    transform: translate(-50%, -50%);
-    width: 200px; /* Slightly smaller for the ring effect */
-    height: 200px;
-    background-color: #f7d0b2;
-    border-radius: 50%;
-    z-index: 2;
-  }
-  .page2-step-image::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 57%;
-    transform: translate(-50%, -50%);
-    width: 250px; /* Size of the background circle */
-    height: 250px;
-    background-color: #f5e1d2; /* Peach color for the main circle */
-    border-radius: 50%;
-    z-index: 1;
+    margin: 0 auto;
+    right: 20%;
   }
 
+  .page2-step-image::before {
+    width: 300px;
+    height: 250px;
+    left: 105%;
+  }
+
+  .page2-step-image::after {
+    width: 250px;
+    height: 200px;
+    left: 105%;
+  }
   /* Page 3 */
   .page3-main-content {
     flex-direction: column;
