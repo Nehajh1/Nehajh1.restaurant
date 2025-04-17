@@ -489,7 +489,7 @@ html body{
   }
   .page3-sidebar ul li{
     font-size: 20px;
-    color: #666;
+    color: #555;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -551,7 +551,7 @@ html body{
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 50px;
-    color: #1c1c1c;
+    color: #333333;
   }  
   .page4-testimonial {
     margin-bottom: 40px;
@@ -572,7 +572,7 @@ html body{
   }  
   .page4-quote {
     font-size: 18px;
-    color: #444;
+    color: #555;
   } 
   .page4-author {
     font-size: 15px;
@@ -622,7 +622,7 @@ html body{
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 40px;
-    color: #2e2e2e;
+    color: #333333;
   }
   .page5-pricing-cards {
     display: flex;
@@ -823,7 +823,7 @@ html body{
   .page6-form-content p {
     margin-bottom: 1.5rem;
     font-size: 0.8rem;
-    color: #333333;
+    color: #555;
   }  
   .page6-form-content form {
     display: flex;
@@ -935,7 +935,7 @@ html body{
   #page7 p {
     margin: 5px 0;
     font-size: 15px;
-    color: #444;
+    color: #555;
     cursor: pointer;
   }
   #page7 p:hover {
@@ -945,6 +945,111 @@ html body{
   /*--------------Responsive page ------------------*/
 
   /* Mobile-first approach */
+  @media (max-width: 320px) {
+    /* Background stays consistent */
+    .page1-scale-wrapper {
+      background-color: #fdf2e9;
+    }
+  
+    /* Header */
+    .page1-header {
+      flex-direction: column;
+      align-items: center;
+      padding: 12px;
+      gap: 8px;
+    }
+  
+    .page1-logo img {
+      width: 110px;
+    }
+  
+    .nav-toggle-label {
+      display: block;
+      z-index: 100;
+    }
+  
+    .page1-main-nav {
+      display: none;
+      width: 100%;
+      text-align: center;
+      background-color: #fdf2e9;
+    }
+  
+    .nav-toggle:checked ~ .page1-main-nav {
+      display: block;
+    }
+  
+    .page1-main-nav-list {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0;
+    }
+  
+    /* Hero Section */
+    .page1-section-hero {
+      padding: 16px;
+    }
+  
+    .page1-hero {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .page1-hero-text-box {
+      padding: 0 8px;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .page1-heading-primary {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+  
+    .page1-hero-description {
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+  
+    /* Buttons - stacked, small */
+    .page1-hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+      padding: 16px 0;
+      align-items: center;
+    }
+  
+    .page1-btn {
+      font-size: 12px;
+      padding: 6px 16px;
+      white-space: nowrap;
+    }
+  
+    /* Delivered meals */
+    .page1-delivered-meals {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .page1-delivered-imgs img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    /* Hero Image */
+    .page1-hero-img-box {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .page1-img-meal2 {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
 @media screen and (max-width: 768px) {
   /* Page 1 */
   #page1,
@@ -1295,193 +1400,206 @@ html body{
   /*--------------Responsive page ------------------*/
 
   /* Mobile-first approach */
-@media screen and (max-width: 768px) {
-  /* Page 1 */
-  .page1-header {
-    padding: 16px 12px; /* Further reduced padding */
-  }
-
-  .page1-logo img {
-    width: 100px; /* Further reduce the logo size */
-  }
-
-  .page1-hero-text-box {
-    max-width: 100%; /* Full width for the text box */
-    padding-left: 20px; /* Reduced padding */
-    padding-right: 20px; /* Reduced padding */
-  }
-
-  .page1-heading-primary {
-    font-size: 32px; /* Reduced heading font size */
-    margin-bottom: 16px; /* Reduced margin */
-  }
-
-  .page1-hero-description {
-    font-size: 14px; /* Reduced description font size */
-  }
-
-  .page1-hero-buttons {
-    gap: 8px; /* Reduced gap between buttons */
-    margin-bottom: 16px; /* Adjusted margin */
-  }
-
-  .page1-btn {
-    padding: 6px 24px; /* Reduced padding for smaller button */
-    font-size: 18px; /* Reduced font size */
-  }
-
-  .page1-delivered-imgs img {
-    width: 32px; /* Smaller profile image */
-    height: 32px; /* Smaller profile image */
-  }
-  .page1-img-meal2{
-    width: 300px;
-  }
-
-  .page1-delivered-text {
-    font-size: 12px; /* Smaller font for delivered text */
-  }
-
+  @media screen and (max-width: 768px) {
+    /* Page 1 */
+    .page1-header {
+      padding: 16px 12px; /* Further reduced padding */
+    }
   
-
-  /* Page 2 */
-  .page2-container {
-    padding: 0 15px;
+    .page1-logo img {
+      width: 100px; /* Further reduce the logo size */
+    }
+  
+    .page1-hero-text-box {
+      max-width: 100%; /* Full width for the text box */
+      padding-left: 20px; /* Reduced padding */
+      padding-right: 20px; /* Reduced padding */
+    }
+    
+  
+    .page1-heading-primary {
+      font-size: 32px; /* Reduced heading font size */
+      margin-bottom: 20px; /* Reduced margin */
+    }
+  
+    .page1-hero-description {
+      font-size: 14px; /* Reduced description font size */
+    }
+  
+    .page1-hero-buttons {
+      gap: 8px; /* Reduced gap between buttons */
+      margin-bottom: 16px; /* Adjusted margin */
+    }
+  
+    .page1-btn {
+      padding: 6px 24px; /* Reduced padding for smaller button */
+      font-size: 18px; /* Reduced font size */
+    }
+  
+    .page1-delivered-imgs img {
+      width: 32px; /* Smaller profile image */
+      height: 32px; /* Smaller profile image */
+    }
+    .page1-hero-img-box{
+      width: 500px;
+      height: 400px;
+    }
+  
+    .page1-delivered-text {
+      font-size: 12px; /* Smaller font for delivered text */
+    }
+  
+    
+  
+    /* Page 2 */
+    .page2-container {
+      padding: 0 15px;
+    }
+  
+    .page2-heading {
+      font-size: 28px;
+    }
+    .page2-logos{
+      font-size: 8px;
+      flex-direction: row;
+      text-align: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .page2-logos img {
+      height: 10px; /* Slightly smaller logos for tablets */
+    }
+    .page2-section-label{
+      max-width: 100%; /* Full width for the text box */
+      padding-left: 150px; /* Reduced padding */
+      padding-right: 20px; /* Reduced padding */
+    }
+    .page2-how-it-works h2{
+      max-width: 100%; /* Full width for the text box */
+      padding-left: 60px; /* Reduced padding */
+      padding-right: 20px; /* Reduced padding */
+    }
+  
+    .page2-step-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .page2-step-text {
+      text-align: center;
+    }
+  
+    .page2-step-number {
+      font-size: 48px;
+    }
+  
+    .page2-step-text h3 {
+      font-size: 20px;
+    }
+  
+    .page2-step-text, .page2-how-it-works p {
+      font-size: 14px;
+    }
+  
+    .page2-logos {
+      gap: 30px; /* Adjusted gap for smaller screens */
+      flex-wrap: wrap;
+    }
+  
+    .page2-logos img {
+      height: 20px; /* Slightly smaller logos for tablets */
+    }
+  
+    .page2-featured-text {
+      font-size: 12px;
+    }
+    .page2-step-image img {
+      max-width: 250px; /* Reduced phone size for tablets */
+    }
+  
+  
+    /* Page 3 */
+    .page3-main-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .page3-recipes {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .page3-recipe-card {
+      width: 100%;
+    }
+  
+    /* Page 4 */
+    .page4-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    /* Page 5 */
+    .page5-pricing-cards {
+      flex-direction: column;
+    }
+    .page5-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* page 6 */
+    /* Stack features vertically on mobile */
+    .page6-features {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+  
+    .page6-feature {
+      max-width: 100%;
+    }
+  
+    /* Stack signup box (image on top, form below) */
+    .page6-signup-box {
+      flex-direction: column-reverse;
+      background: none; /* Remove gradient from the container */
+      display: flex;
+    }
+  
+    .page6-form-content {
+      background: linear-gradient(to right, #ec8c3a, #e87e1c); /* White box */
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      color: #333; /* Dark text */
+    }
+  
+    .page6-form-image {
+      flex: none;
+      width: 100%;
+    }
+  
+    .page6-form-image img {
+      border-radius: 12px 12px 0 0; /* Round top corners of the image */
+      height: 200px; /* Fixed height for mobile to match screenshot proportions */
+    }
+  
+    /* Adjust form fields for mobile */
+    .page6-form-group {
+      flex: 1 1 45%; /* Preserve the side-by-side layout for form fields */
+    }
+  
+    .page6-full-width {
+      flex: 1 1 100%; /* Full-width fields like the dropdown and button remain full-width */
+    }
+  
+    /* Adjust padding and spacing for mobile */
+    .page6-signup-section {
+      margin-bottom: 30px;
+    }
   }
-
-  .page2-heading {
-    font-size: 28px;
-  }
-  .page2-logos{
-    font-size: 8px;
-    flex-direction: row;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  .page2-logos img {
-    height: 10px; /* Slightly smaller logos for tablets */
-  }
-
-  .page2-step-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .page2-step-text {
-    text-align: center;
-  }
-
-  .page2-step-number {
-    font-size: 48px;
-  }
-
-  .page2-step-text h3 {
-    font-size: 20px;
-  }
-
-  .page2-step-text, .page2-how-it-works p {
-    font-size: 14px;
-  }
-
-  .page2-logos {
-    gap: 30px; /* Adjusted gap for smaller screens */
-    flex-wrap: wrap;
-  }
-
-  .page2-logos img {
-    height: 20px; /* Slightly smaller logos for tablets */
-  }
-
-  .page2-featured-text {
-    font-size: 12px;
-  }
-  .page2-step-image img {
-    max-width: 250px; /* Reduced phone size for tablets */
-  }
-
-
-  /* Page 3 */
-  .page3-main-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .page3-recipes {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .page3-recipe-card {
-    width: 100%;
-  }
-
-  /* Page 4 */
-  .page4-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  /* Page 5 */
-  .page5-pricing-cards {
-    flex-direction: column;
-  }
-  .page5-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  /* page 6 */
-  /* Stack features vertically on mobile */
-  .page6-features {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
-  }
-
-  .page6-feature {
-    max-width: 100%;
-  }
-
-  /* Stack signup box (image on top, form below) */
-  .page6-signup-box {
-    flex-direction: column-reverse;
-    background: none; /* Remove gradient from the container */
-    display: flex;
-  }
-
-  .page6-form-content {
-    background: linear-gradient(to right, #ec8c3a, #e87e1c); /* White box */
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    color: #333; /* Dark text */
-  }
-
-  .page6-form-image {
-    flex: none;
-    width: 100%;
-  }
-
-  .page6-form-image img {
-    border-radius: 12px 12px 0 0; /* Round top corners of the image */
-    height: 200px; /* Fixed height for mobile to match screenshot proportions */
-  }
-
-  /* Adjust form fields for mobile */
-  .page6-form-group {
-    flex: 1 1 45%; /* Preserve the side-by-side layout for form fields */
-  }
-
-  .page6-full-width {
-    flex: 1 1 100%; /* Full-width fields like the dropdown and button remain full-width */
-  }
-
-  /* Adjust padding and spacing for mobile */
-  .page6-signup-section {
-    margin-bottom: 30px;
-  }
-}
 
 
 @media (max-width: 480px) {
+
   .nav-toggle-label {
     width: 25px;
     height: 18px;
@@ -1665,6 +1783,53 @@ html body{
     overflow-x: auto;
 }
 }
+@media (max-width: 1280px) {
+  /* Center hero buttons in column layout */
+  .page1-hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    width: 100%;
+  }
 
+  .page1-btn {
+    white-space: nowrap;
+    font-size: 16px;
+    padding: 10px 24px;
+    width: fit-content;
+    text-align: center;
+  }
 
+  /* Make sure logo and hamburger are centered */
+  .page1-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 
+  .page1-logo img {
+    width: 140px;
+  }
+
+ 
+  .page1-main-nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Hero image centered */
+  .page1-hero-img-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .page1-img-meal2 {
+    width: 80%;
+    height: auto;
+  }
+}
